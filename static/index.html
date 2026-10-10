@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-one"></div>
+    <div class="bg-glow glow-two"></div>
+
+    <main class="app-shell">
+      <section class="panel hero-card">
+        <div class="status-row">
+          <span class="status-dot"></span>
+          <span>Live vibe generator</span>
+        </div>
+
+        <h1>Welcome to your <span>VibeBoard</span></h1>
+        <p class="subtitle">
+          Pick your mood and let the app create a fresh little spark for the day.
+        </p>
+
+        <div class="controls">
+          <label>
+            <span>Name</span>
+            <input id="name" type="text" placeholder="Enter your name" value="Ava" />
+          </label>
+
+          <label>
+            <span>Mood</span>
+            <select id="mood">
+              <option value="happy">Happy</option>
+              <option value="focused">Focused</option>
+              <option value="creative">Creative</option>
+              <option value="chill">Chill</option>
+              <option value="adventurous">Adventurous</option>
+            </select>
+          </label>
+        </div>
+
+        <button id="generateBtn" class="primary-btn">Generate my vibe</button>
+
+        <div class="output-card" id="outputCard">
+          <p class="label">Your message</p>
+          <h2 id="message">Hello, Ava! You are radiating good energy today. ✨</h2>
+          <p id="quote">Small steps still move you forward.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
